@@ -1,23 +1,11 @@
-import { PropTypes } from 'prop-types';
-import React from 'react';
-import Page from '../../Page';
+import Loadable from 'react-loadable';
+import Loading from '../../Loading';
 
-const ChartA = ({ history: { push }, location: { pathname }}) => (
-  <Page
-    pathname={pathname}
-    push={push}
-  >
-    ChartA
-  </Page>
-);
+const loader = () => import('./ChartALoad');
 
-ChartA.propTypes = {
-  history: PropTypes.shape({
-    push: PropTypes.func.isRequired,
-  }).isRequired,
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
-};
+const ChartA = Loadable({
+  loader,
+  loading: Loading,
+});
 
 export default ChartA;
