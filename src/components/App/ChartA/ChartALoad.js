@@ -1,17 +1,6 @@
 import React from 'react';
-import Page from '../../Page';
-
-const ChartALoad = () => (
-  <Page>
-    ChartA
-  </Page>
-);
-
-export default ChartALoad;
-
-/*
-import React from 'react';
 import { Pie } from 'react-chartjs-2';
+import Page from '../../Page';
 
 const DATA = {
   datasets: [
@@ -21,9 +10,12 @@ const DATA = {
     },
   ],
   labels: ['Red', 'Yellow', 'Blue'],
-};
+}; 
 
-const ChartALoad = () => <Pie data={DATA} />;
+const ChartALoad = () => (
+  <Page>
+    <Pie data={DATA} />
+  </Page>
+);
 
 export default ChartALoad;
-*/
