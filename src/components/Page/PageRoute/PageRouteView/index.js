@@ -23,6 +23,7 @@ class PageRouteView extends PureComponent {
             <Menu.Item key="/">Home</Menu.Item>
             <Menu.Item key="/charta/">ChartA</Menu.Item>
             <Menu.Item key="/chartb/">ChartB</Menu.Item>
+            <Menu.Item key="/lorem/">Lorem</Menu.Item>
           </Menu>
         </Header>
         <Content id={styles.rootContent}>
