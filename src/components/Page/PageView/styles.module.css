@@ -1,0 +1,17 @@
+#rootHeaderMenu {
+  line-height: 64px;
+}
+
+#rootContent {
+  padding: 0px 50px;
+}
+
+#rootContentBody {
+  background: #fff;
+  padding: 24px;
+  min-height: 280px;
+}
+
+#rootFooter {
+  text-align: center;
+}
