@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 
 const { Header, Content, Footer } = Layout;
 
-class PageView extends PureComponent {
+class PageRouteView extends PureComponent {
   render() {
     const { children, onMenuSelect, pathname } = this.props;
     return (
@@ -38,10 +38,10 @@ class PageView extends PureComponent {
   }
 }
 
-PageView.propTypes = {
+PageRouteView.propTypes = {
   children: PropTypes.node.isRequired,
   onMenuSelect: PropTypes.func.isRequired,
   pathname: PropTypes.string.isRequired,
 };
 
-export default PageView;
+export default PageRouteView;
