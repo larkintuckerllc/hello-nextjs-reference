@@ -11,7 +11,6 @@ class PageRouteView extends PureComponent {
     return (
       <Layout className="layout">
         <Header>
-          <div className="logo" />
           <Menu
             defaultSelectedKeys={[pathname]}
             id={styles.rootHeaderMenu}
