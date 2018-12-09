@@ -1,5 +1,4 @@
-import Layout from 'antd/lib/layout';
-import Menu from 'antd/lib/menu';
+import { Layout, Menu} from 'antd';
 import { PropTypes } from 'prop-types';
 import React, { PureComponent } from 'react';
 import styles from './styles.module.css';

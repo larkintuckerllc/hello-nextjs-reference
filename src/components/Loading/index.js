@@ -1,4 +1,4 @@
-import Spin from 'antd/lib/spin';
+import { Spin } from 'antd';
 import React from 'react';
 import styles from './styles.module.css';
 
